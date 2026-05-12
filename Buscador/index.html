@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buscador</title>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-100 min-h-screen">
+
+<!-- Contenedor -->
+<div class="max-w-4xl mx-auto p-6">
+
+    <!-- Buscador -->
+    <header class="mb-8">
+        <h1 class="text-3xl font-bold mb-4 text-slate-800">
+            Buscar Juegos
+        </h1>
+
+        <div class="flex gap-3">
+            <input 
+                type="text"
+                placeholder="Buscar..."
+                id="txtBuscar"
+                class="w-full px-5 py-3 rounded-xl border border-slate-300 bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            >
+            <button class="bg-indigo-600 text-white px-6 rounded-xl hover:bg-indigo-700">
+                Buscar
+            </button>
+        </div>
+    </header>
+
+    <!-- Resultados -->
+    <section class="space-y-5">
+        <div id="no-results" class="bg-red-400 text-white rounded-lg p-5 hidden">
+            No hay resultados.
+        </div>
+        <!-- Card -->
+        <article class="bg-white rounded-2xl shadow-sm hover:shadow-md transition p-4 flex gap-5 game-card">
+            <img 
+                src="https://i.ytimg.com/vi/F2Q4xrASt94/maxresdefault.jpg" 
+                class="w-44 h-32 object-cover rounded-xl"
+                alt=""
+            >
+
+            <div class="flex flex-col justify-between">
+                <div>
+                    <h2 class="text-xl font-semibold text-slate-800">
+                        FC 26
+                    </h2>
+
+                    <p class="text-slate-600 mt-2">
+                        Descripción breve del resultado encontrado. 
+                        Información resumida para mostrar en la búsqueda.
+                    </p>
+                </div>
+
+                <button class="mt-4 w-fit bg-slate-900 text-white px-4 py-2 rounded-lg">
+                    Ver más
+                </button>
+            </div>
+        </article>
+
+
+        <article class="bg-white rounded-2xl shadow-sm hover:shadow-md transition p-4 flex gap-5 game-card">
+            <img 
+                src="https://i0.wp.com/www.gamerfocus.co/wp-content/uploads/2018/02/Fortnite.jpg?fit=1920%2C1080&ssl=1" 
+                class="w-44 h-32 object-cover rounded-xl"
+                alt=""
+            >
+
+            <div class="flex flex-col justify-between">
+                <div>
+                    <h2 class="text-xl font-semibold text-slate-800">
+                        Fornite
+                    </h2>
+
+                    <p class="text-slate-600 mt-2">
+                        Otro resultado con formato horizontal para listados.
+                    </p>
+                </div>
+
+                <button class="mt-4 w-fit bg-slate-900 text-white px-4 py-2 rounded-lg">
+                    Ver más
+                </button>
+            </div>
+        </article>
+
+
+        <article class="bg-white rounded-2xl shadow-sm hover:shadow-md transition p-4 flex gap-5 game-card">
+            <img 
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9-aD0lRv3hOZvJXQxYLhNUo2O4ZS9XQd6hw&s" 
+                class="w-44 h-32 object-cover rounded-xl"
+                alt=""
+            >
+
+            <div class="flex flex-col justify-between">
+                <div>
+                    <h2 class="text-xl font-semibold text-slate-800">
+                        Call of Duty Warzone
+                    </h2>
+
+                    <p class="text-slate-600 mt-2">
+                        Diseño simple y limpio tipo página de resultados.
+                    </p>
+                </div>
+
+                <button class="mt-4 w-fit bg-slate-900 text-white px-4 py-2 rounded-lg">
+                    Ver más
+                </button>
+            </div>
+        </article>
+
+        <article class="bg-white rounded-2xl shadow-sm hover:shadow-md transition p-4 flex gap-5 game-card">
+            <img 
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoTBkjGo3JUYexr1frOV_ARC5rxK7BTJN5cQ&s" 
+                class="w-44 h-32 object-cover rounded-xl"
+                alt=""
+            >
+
+            <div class="flex flex-col justify-between">
+                <div>
+                    <h2 class="text-xl font-semibold text-slate-800">
+                        Howarts Legacy
+                    </h2>
+
+                    <p class="text-slate-600 mt-2">
+                        Diseño simple y limpio tipo página de resultados.
+                    </p>
+                </div>
+
+                <button class="mt-4 w-fit bg-slate-900 text-white px-4 py-2 rounded-lg">
+                    Ver más
+                </button>
+            </div>
+        </article>
+
+        <article class="bg-white rounded-2xl shadow-sm hover:shadow-md transition p-4 flex gap-5 game-card">
+            <img 
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-sFQyKNESTiCrXXWRaNExifj-B7y4vDXrhA&s" 
+                class="w-44 h-32 object-cover rounded-xl"
+                alt=""
+            >
+
+            <div class="flex flex-col justify-between">
+                <div>
+                    <h2 class="text-xl font-semibold text-slate-800">
+                        God of War
+                    </h2>
+
+                    <p class="text-slate-600 mt-2">
+                        Diseño simple y limpio tipo página de resultados.
+                    </p>
+                </div>
+
+                <button class="mt-4 w-fit bg-slate-900 text-white px-4 py-2 rounded-lg">
+                    Ver más
+                </button>
+            </div>
+        </article>
+
+        <article class="bg-white rounded-2xl shadow-sm hover:shadow-md transition p-4 flex gap-5 game-card">
+            <img 
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgblHHEvdRg_UjvQE2bB0zB80bHOvARwMB2Q&s" 
+                class="w-44 h-32 object-cover rounded-xl"
+                alt=""
+            >
+
+            <div class="flex flex-col justify-between">
+                <div>
+                    <h2 class="text-xl font-semibold text-slate-800">
+                        GTA 5
+                    </h2>
+
+                    <p class="text-slate-600 mt-2">
+                        Diseño simple y limpio tipo página de resultados.
+                    </p>
+                </div>
+
+                <button class="mt-4 w-fit bg-slate-900 text-white px-4 py-2 rounded-lg">
+                    Ver más
+                </button>
+            </div>
+        </article>
+
+    </section>
+
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
